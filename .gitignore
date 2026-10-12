@@ -1,0 +1,22 @@
+# Môi trường và file tạm của Python
+.venv/
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+
+# Dữ liệu đầu vào và kết quả sinh ra
+data/
+outputs/
+output/
+
+# Audio/video: chỉ đưa demo đã chọn lọc lên sau
+*.wav
+*.mp3
+*.flac
+*.m4a
+*.ogg
+*.mp4
+
+# Cấu hình có thể chứa thông tin riêng
+.env
+.env.*

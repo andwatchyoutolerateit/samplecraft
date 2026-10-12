@@ -10,8 +10,8 @@ audio, sample_rate = sf.read(audio_path)
 duration = len(audio) / sample_rate
 
 # Khoảng thử cho tiếng gõ đầu tiên.
-start_seconds = 3.6
-end_seconds = 4.4
+start_seconds = 6.2
+end_seconds = 7.0
 
 # Kiểm tra trước khi cắt: khoảng phải nằm trong bản thu.
 if not (0 <= start_seconds < end_seconds <= duration):
@@ -28,7 +28,7 @@ clip = audio[start_sample:end_sample]
 
 output_dir = project_dir / "outputs"
 output_dir.mkdir(parents = True, exist_ok = True)
-output_path = output_dir / "glass_hit_01.wav"
+output_path = output_dir / "glass_hit_02.wav"
 
 # Use the correct sample rate of the audio to keep the playback speed
 sf.write(output_path, clip, sample_rate, subtype= "PCM_16")
